@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks | Recetario Personal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Pacifico&family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagenes/vanilla.png" type="image/png">
+</head>
+
+<body data-type="pagina3" class="pagina-drinks" onload="verificarEdad()">
+<div id="contenidoPagina" class="oculto">
+  <header>
+    <h1>Drinks!</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pagina1.html">Recetas Dulces</a></li>
+        <li><a href="pagina2.html">Recetas Saladas</a></li>
+        <li><a href="pagina3.html" class="activo">Drinks!</a></li>
+      </ul>
+    </nav>
+    <button id="modoOscuro" class="modo-oscuro-btn">🌙</button>
+  </header>
+
+  <nav class="menu-interno">
+    <ul>
+      <li><a href="#directos">Directos</a></li>
+      <li><a href="#batidos">Batidos y Refrescados</a></li>
+      <li><a href="#frozen">Frozen</a></li>
+      <li><a href="#especiales">Especiales</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero3">
+    <img src="imagenes/fondo4.jpg" alt="Fondo de cócteles coloridos">
+    <div class="hero3-text">
+      <h2>Arte y Sabor: <br>Las Mejores Bebidas</h2>
+      <p>Dominá el arte de la coctelería con recetas sencillas y técnicas profesionales.</p>
+    </div>
+  </section>
+
+<section class="precaucion">
+  <h2>Beber con moderación</h2>
+  <p>
+    El consumo responsable de alcohol es fundamental para cuidar tu salud y disfrutar de manera equilibrada. 
+    Informate y tomá decisiones conscientes.
+  </p>
+
+  <div class="enlaces-precaucion">
+    <a href="https://www.who.int/es/news-room/fact-sheets/detail/alcohol" target="_blank" class="link-boton">
+      Informe OMS sobre consumo de alcohol
+    </a>
+    <a href="https://www.argentina.gob.ar/salud/salud-mental-y-adicciones/alcohol/consumo-responsable" target="_blank" class="link-boton">
+      Ministerio de Salud de Argentina
+    </a>
+    <a href="https://www.nytimes.com/es/2022/01/07/espanol/alcohol-propositos-consumo.html" target="_blank" class="link-boton">
+      The New York Times
+    </a>
+  </div>
+</section>
+  
+  <main>
+
+    <section id="directos">
+      <h2>Tragos Directos (Aperitivos)</h2>
+      <p class="introduccion">
+        Son los cócteles más rápidos y se preparan vertiendo los ingredientes directamente en el vaso con hielo. Perfectos para iniciar una reunión.
+      </p>
+
+      <article class="receta">
+        <h3>Negroni (Aperitivo Clásico)</h3> 
+        <p>
+            Un aperitivo italiano potente, amargo y sofisticado, conocido por su equilibrio perfecto 
+            entre la dulzura del vermut, la amargura del Campari y la botánica de la ginebra. 
+            Se sirve en vaso corto y se decora con una piel de naranja.
+        </p>
+        
+        <div class="contenido">
+          <div class="texto">
+            <h4>Ingredientes:</h4>
+            <ul>
+              <li>30 ml de Ginebra (Gin)</li>
+              <li>30 ml de Campari</li>
+              <li>30 ml de Vermut Rojo dulce</li>
+              <li>Piel de naranja para decorar</li>
+              <li>Hielo en cubos grandes</li>
+            </ul>
+
+            <h4>Preparación:</h4>
+            <ol>
+              <li>En un vaso mezclador con hielo, combinar la ginebra, el Campari y el vermut.</li>
+              <li>Remover suavemente (refrescar) por unos 15-20 segundos.</li>
+              <li>Servir en un vaso Old Fashioned o Rock Glass con hielo nuevo.</li>
+              <li>Decorar exprimiendo una piel de naranja sobre el trago para liberar los aceites esenciales.</li>
+            </ol>
+          </div>
+
+          <div class="video-wrapper">
+            <h4 class="video-titulo">¡Acá te dejo un tutorial para seguir!</h4>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/qzkvAKUadZE" 
+              title="Negroni clásico" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="batidos">
+      <h2>Batidos y Refrescados (Largos y Refrescantes)</h2>
+      <p class="introduccion">
+        Se mezclan con coctelera o se enfrían intensamente, resultando en tragos más diluidos y fáciles de beber. Ideales para el día.
+      </p>
+
+      <article class="receta">
+        <h3>Mojito Clásico</h3> 
+        <p>
+            Originario de Cuba, es el trago largo por excelencia. Su frescura se basa en la combinación de menta (hierbabuena) fresca, 
+            lima, azúcar y un buen ron blanco. Es fundamental no machacar en exceso la menta para evitar el amargor.
+        </p>
+        
+        <div class="contenido">
+          <div class="texto">
+            <h4>Ingredientes:</h4>
+            <ul>
+              <li>60 ml de Ron blanco</li>
+              <li>1 cucharada de azúcar (o 20 ml de almíbar)</li>
+              <li>1/2 lima en gajos</li>
+              <li>10 hojas de Menta o hierbabuena</li>
+              <li>Agua con gas o Soda</li>
+              <li>Hielo picado</li>
+            </ul>
+
+            <h4>Preparación:</h4>
+            <ol>
+              <li>En un vaso alto, poner el azúcar y la lima. Machacar suavemente con un mortero.</li>
+              <li>Añadir las hojas de menta y presionar solo una vez (sin triturar).</li>
+              <li>Llenar el vaso con hielo picado.</li>
+              <li>Agregar el ron y completar con agua con gas. Remover suavemente.</li>
+              <li>Decorar con una rama de menta.</li>
+            </ol>
+          </div>
+
+          <div class="video-wrapper">
+            <h4 class="video-titulo">¡Acá te dejo un tutorial para seguir!</h4>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/sIvYdLHwv8A" 
+              title="Mojito Clásico" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="receta">
+        <h3>Pink Cocktail (Estilo Gin Tonic Rosado)</h3> 
+        <p>
+            Una versión moderna y popular del Gin Tonic. Este trago se define por su color vibrante, 
+            aportado por ginebras rosadas o la adición de frutos rojos. Es refrescante, floral y perfecto 
+            para una ocasión festiva.
+        </p>
+        
+        <div class="contenido">
+          <div class="texto">
+            <h4>Ingredientes:</h4>
+            <ul>
+              <li>50 ml de Ginebra Rosada (o ginebra clásica + 20 ml de jarabe de frutos rojos)</li>
+              <li>100-150 ml de Tónica Premium</li>
+              <li>Frutos Rojos frescos (frambuesas, arándanos)</li>
+              <li>Piel de limón o pomelo</li>
+              <li>Mucho hielo</li>
+            </ul>
+
+            <h4>Preparación:</h4>
+            <ol>
+              <li>En una copa de balón, agregar abundante hielo.</li>
+              <li>Verter la ginebra (y el jarabe, si aplica) y la tónica.</li>
+              <li>Remover muy suavemente para integrar.</li>
+              <li>Decorar con los frutos rojos y un twist de piel de limón.</li>
+            </ol>
+          </div>
+
+          <div class="video-wrapper">
+            <h4 class="video-titulo">¡Acá te dejo un tutorial para seguir!</h4>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/gup3q_q3_kk" 
+              title="Pink Gin Tonic" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="frozen">
+      <h2>Tragos Frozen (Granizados)</h2>
+      <p class="introduccion">
+        Bebidas cremosas y frías, preparadas en licuadora con mucho hielo y fruta, resultando en una textura de granizado ideal para el calor.
+      </p>
+
+      <article class="receta">
+        <h3>Daiquirí de Frutilla</h3> 
+        <p>
+            El clásico daiquirí (ron, lima y azúcar) llevado al extremo de frescura con frutillas congeladas. 
+            El equilibrio entre el ron y la acidez de la lima es crucial. Es un cóctel dulce y potente, ideal para la piscina o la playa.
+        </p>
+        
+        <div class="contenido">
+          <div class="texto">
+            <h4>Ingredientes:</h4>
+            <ul>
+              <li>50 ml de Ron blanco</li>
+              <li>25 ml de Jugo de lima natural</li>
+              <li>20 ml de Almíbar simple (o 2 cucharadas de azúcar)</li>
+              <li>1 taza de Frutillas congeladas</li>
+              <li>1/2 taza de Hielo</li>
+            </ul>
+
+            <h4>Preparación:</h4>
+            <ol>
+              <li>Poner todos los ingredientes en una licuadora potente.</li>
+              <li>Licuar a velocidad alta hasta obtener una mezcla homogénea y con la textura de nieve.</li>
+              <li>Si la mezcla está muy espesa, agregar un chorrito de ron o lima.</li>
+              <li>Servir en una copa de cóctel fría y decorar con una frutilla en el borde.</li>
+            </ol>
+          </div>
+
+          <div class="video-wrapper">
+            <h4 class="video-titulo">¡Acá te dejo un tutorial para seguir!</h4>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/H2QD90xrJRU" 
+              title="Daiquirí de Frutilla" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="especiales">
+      <h2>Especiales (Digestivos y Calientes)</h2>
+      <p class="introduccion">
+        Tragos más complejos o con funciones específicas, como ayudar a la digestión o servir como postre.
+      </p>
+
+      <article class="receta">
+        <h3>Pisco Sour (Digestivo / Clásico Peruano)</h3> 
+        <p>
+            La versión más famosa de Perú, un coctel digestivo a base de pisco (aguardiente de uva), 
+            jugo de lima, jarabe de goma y, lo que le da su textura inconfundible, clara de huevo. 
+            El amargo de angostura le da el toque aromático final.
+        </p>
+        
+        <div class="contenido">
+          <div class="texto">
+            <h4>Ingredientes:</h4>
+            <ul>
+              <li>60 ml de Pisco (acholado o quebranta)</li>
+              <li>30 ml de Jugo de lima o limón peruano</li>
+              <li>30 ml de Jarabe de goma (o almíbar)</li>
+              <li>1/2 Clara de huevo fresca</li>
+              <li>2 gotas de Amargo de Angostura</li>
+            </ul>
+
+            <h4>Preparación:</h4>
+            <ol>
+              <li>Combinar todos los ingredientes (excepto el amargo) en una coctelera.</li>
+              <li>Hacer un "dry shake" (batir sin hielo) para espumar la clara de huevo.</li>
+              <li>Añadir hielo y batir vigorosamente hasta enfriar.</li>
+              <li>Servir colando en copa de cóctel.</li>
+              <li>Añadir las gotas de Amargo de Angostura sobre la espuma.</li>
+            </ol>
+          </div>
+
+          <div class="video-wrapper">
+            <h4 class="video-titulo">¡Acá te dejo un tutorial para seguir!</h4>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/vM3A0crOeDg" 
+              title="Pisco Sour Clásico" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyecto Final Programación Recetario - Alumna: Lara Ain Serrano "63580"- Materia: Programacion 2 - Comision 2
+Universidad Tecnologica Nacional - Facultad Regional Tucuman</p>
+  </footer>
+<button id="btnSubir" title="Volver al inicio">⬆</button>
+<script src="js/main.js"></script>
+</div>
+</body>
+</html>

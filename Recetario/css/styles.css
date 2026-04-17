@@ -1,0 +1,1020 @@
+/* PALETA DE COLORES Y FUENTES */
+:root {
+  --first-font: "Pacifico";
+  --second-font: "Lato";
+  --tird-font: "Sansita Swashed";
+  --chocolate: #684627;
+  --peach: #daa38f;
+  --wheat: #dfc49b;
+  --coffee: #9b7d61;
+  --cream: #fbf5e9;
+}
+
+/* reset */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--peach) var(--cream);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--second-font), sans-serif;
+  background: var(--cream);
+  color: var(--chocolate);
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+/* header */
+header {
+  text-align: center;
+  font-family: var(--tird-font), serif;
+  background: var(--chocolate);
+  color: white;
+  padding: 15px 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap; 
+}
+
+.nav-list a {
+  font-family: var(--second-font), serif;
+  color: var(--cream);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.nav-list a:hover {
+  background: var(--peach);
+  color: var(--chocolate);
+}
+
+/*  HERO */
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 2000px; 
+}
+
+.hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(0.8); 
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: var(--tird-font);
+  text-align: center;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 15px;
+  color: #fff !important; 
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 1.4rem; 
+  color: #f9f9f9;
+}
+
+/* SECCIONES (INDEX) */
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 50px;
+}
+.card {
+  background: var(--wheat);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGENES */
+.imagenesindex {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.imagenesindex:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/*  BOTONES */
+.btn {
+  display: inline-block;
+  color: var(--chocolate);
+  padding: 8px 14px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: var(--peach);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--coffee);
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid var(--chocolate);
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: var(--peach);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background: var(--chocolate);
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9em;
+  font-family: var(--second-font), serif;
+}
+footer a {
+  color: var(--peach);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------------------------
+PÁGINA 1 
+---------------------------------------------------------------------------------- */
+
+.pag1 {
+  background: var(--cream);
+}
+
+/*  HERO 2 */
+.hero2 {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1200px; 
+}
+
+.hero2 img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(0.8); 
+}
+
+.hero2-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: var(--tird-font);
+  text-align: center;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.hero2-text h2 {
+  font-size: 3.5rem; 
+  margin-bottom: 15px;
+  color: #fff !important; 
+  letter-spacing: 2px;
+}
+
+.hero2-text p {
+  font-size: 1.4rem; 
+  color: #f9f9f9;
+}
+/*  CUADROS DE SECCION (menu) */
+.secciones {
+  background-color: #fff;
+  width: 300px;
+  margin: 80px auto 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-shadow: none;
+  border-left: 5px solid var(--peach);
+  transition: all 0.3s ease;
+}
+.secciones:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.secciones h3 {
+  color: var(--chocolate);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.secciones a {
+  text-decoration: none;
+  color: #4a4a4a;
+  display: block;
+  padding: 5px 0;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.secciones a:hover {
+  color: var(--peach);
+  font-weight: 700;
+}
+
+/* titulos */
+.seccion-titulo {
+  text-align: center;
+  padding: 20px 40px;
+  margin: 80px auto 40px;
+  background-color: #ffbeb0;
+  color: var(--chocolate);
+  border-radius: 50px;
+  font-size: 2.5rem;
+  font-family: var(--tird-font);
+  letter-spacing: 4px;
+  width: 60%;
+  box-shadow: 4px 4px 0 0 var(--coffee);
+  transition: 0.2s ease;
+}
+.seccion-titulo:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 0 var(--coffee);
+}
+
+/*  cards de recetas */
+.dulce-card {
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 70px auto;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
+
+.contenido-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imagen-and-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.dulce-card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 10px solid var(--peach);
+  transition: transform 0.3s ease;
+}
+.dulce-card img:hover {
+  transform: scale(1.03);
+}
+
+/* tablas */
+.dulce-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: var(--second-font), sans-serif;
+  font-size: 0.95rem;
+}
+
+.dulce-card th,
+.dulce-card td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dulce-card th {
+  background-color: #f7c6b9;
+  color: var(--chocolate);
+  font-weight: 600;
+}
+.dulce-card:nth-child(even) 
+.contenido-card { flex-direction: row-reverse; }
+
+/* TEXTO DE LAS RECETAS */
+.card-texto {
+  flex: 2;
+  text-align: left;
+  background-color: #fbe6c9;
+  border-radius: 8px;
+  padding: 30px;
+  line-height: 1.7;
+  color: var(--chocolate);
+}
+
+.card-texto h4 {
+  border-bottom: 2px solid var(--peach);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-texto ul,
+.card-texto ol {
+  margin-left: 20px;
+}
+
+.card-texto ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.card-texto ul li {
+  position: relative;
+  padding-left: 1.8em;
+  margin-bottom: 8px;
+  color: #4a4a4a;
+}
+
+.card-texto ul li::before {
+  content: "◾"; /* el mismo ícono que usás en Pagina 2 */
+  color: var(--peach);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.card-texto ol {
+  list-style: none;
+  counter-reset: step-counter;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.card-texto ol li {
+  counter-increment: step-counter;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding-left: 50px;
+  position: relative;
+}
+
+.card-texto ol li::before {
+  content: counter(step-counter);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--peach);
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: var(--second-font);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-receta {
+  text-align: center;
+  font-family: var(--tird-font);
+  font-size: 2.2rem;
+  color: var(--chocolate);
+  margin-bottom: 30px;
+  font-weight: 900;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.pag1 .introduccion {
+    font-style: italic;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 30px;
+    font-size: 1.1rem;
+    color: var(--coffee);
+}
+/* ----------------------------------------------------------------- PÁGINA 2 - RECETAS SALADAS ---------------------------------------------------------------------------------- */
+
+
+/* MENÚ INTERNO */
+.menu-interno {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--coffee); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.menu-interno ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+  padding: 15px 0;
+}
+.menu-interno a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.menu-interno a:hover {
+  background: var(--peach);
+  color: var(--chocolate);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* HERO 3 */
+.hero3 {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1200px; 
+}
+
+.hero3 img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(0.8); 
+}
+
+.hero3-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: var(--tird-font);
+  text-align: center;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.hero3-text h2 {
+  font-size: 3.5rem; 
+  margin-bottom: 15px;
+  color: #fff !important; 
+  letter-spacing: 2px;
+}
+
+.hero3-text p {
+  font-size: 1.4rem; 
+  color: #f9f9f9;
+}
+
+/* TÍTULOS DE (H2) */
+.pagina-saladas section h2 {
+  font-family: var(--tird-font);
+  font-size: 3.2rem;
+  color: var(--chocolate);
+  text-align: center;
+  border-bottom: 5px double var(--peach);
+  display: block;
+  padding: 10px 0;
+  margin: 80px auto 40px;
+  max-width: 800px;
+  font-weight: 700;
+}
+
+/* recetas */
+.receta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.receta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+.receta h3 {
+  font-family: var(--tird-font);
+  font-size: 2.5rem; 
+  color: var(--coffee);
+  border-left: 5px solid var(--peach); 
+  padding-left: 15px;
+  margin-bottom: 20px;
+  text-align: left; 
+}
+.receta p {
+  margin: 10px 0 20px 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.contenido .texto {
+  flex: 1 1 450px; 
+  min-width: 300px;
+}
+
+
+.receta .texto h4 {
+  font-family: var(--second-font);
+  color: var(--chocolate);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 25px;
+  border-bottom: 2px solid var(--wheat);
+  padding-bottom: 5px;
+}
+
+/* LISTA DE INGREDIENTES  */
+.receta .texto ul {
+  list-style: none; 
+  padding-left: 0;
+  margin-top: 10px;
+}
+.receta .texto ul li {
+  padding-left: 1.8em;
+  position: relative;
+  margin-bottom: 8px;
+  color: #4a4a4a;
+}
+.receta .texto ul li::before {
+  content: "◾"; 
+  color: var(--peach);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+/*PREPARACION */
+.receta .texto ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step-counter; 
+  margin-top: 15px;
+}
+
+.receta .texto ol li {
+  counter-increment: step-counter; 
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding-left: 50px; 
+  position: relative;
+}
+
+.receta .texto ol li::before {
+  content: counter(step-counter); 
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  background: var(--peach);
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%; 
+  font-weight: 700;
+  font-family: var(--second-font);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* --- VIDEO WRAPPER(contenedor) Y TITULO --- */
+
+.video-wrapper {
+    flex: 1 1 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.video-titulo {
+    font-family: var(--second-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--chocolate);
+    text-align: center;
+    
+    /* diseño de etiqueta */
+    background-color: var(--wheat); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--peach);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+}
+
+/* contenedor de los video */
+.video-wrapper .video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    width: 100%; 
+}
+
+
+.video-wrapper .video::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.video-wrapper .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.pagina-saladas .introduccion {
+    font-style: italic;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 30px;
+    font-size: 1.1rem;
+    color: var(--coffee);
+}
+/* --------------------------------------------------------------- PÁGINA 3 - DRINKS 
+--------------------------- */
+
+
+body.pagina-drinks {
+    background: linear-gradient(to bottom, var(--wheat), #e8c99e); 
+    color: var(--chocolate);
+}
+
+.precaucion {
+  background-color: var(--wheat);
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 3px solid var(--peach);
+  border-bottom: 3px solid var(--peach);
+}
+
+.precaucion h2 {
+  color: var(--coffee);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.precaucion p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: var(--chocolate);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.enlaces-precaucion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.link-boton {
+  background-color: var(--peach);
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.link-boton:hover {
+  background-color: var(--coffee);
+  transform: scale(1.05);
+}
+
+body.dark-mode .precaucion {
+  background-color: #3a281b !important;
+  border-color: #5a4633 !important;
+}
+
+body.dark-mode .precaucion p {
+  color: #f0e4d2 !important;
+}
+
+body.dark-mode .link-boton {
+  background-color: #f7d9b0 !important;
+  color: #3c2a20 !important;
+}
+
+body.dark-mode .link-boton:hover {
+  background-color: #e4b983 !important;
+}
+
+.pagina-drinks section h2 {
+  font-family: var(--tird-font);
+  font-size: 3.2rem;
+  color: var(--chocolate);
+  text-align: center;
+  border-bottom: 5px double var(--peach); 
+  display: block;
+  padding: 10px 0;
+  margin: 80px auto 40px;
+  max-width: 800px;
+  font-weight: 700;
+}
+
+.pagina-drinks .introduccion {
+    font-style: italic;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 30px;
+    font-size: 1.1rem;
+    color: var(--coffee);
+}
+
+.oculto {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+/* Cuando el acceso se permite */
+.visible {
+  filter: blur(0);
+  pointer-events: auto;
+  user-select: auto;
+  opacity: 1;
+}
+
+/* BOTON INICIOOO*/
+
+#btnSubir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--peach);
+  color: var(--chocolate);
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none; /* oculto por defecto */
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+#btnSubir:hover {
+  background-color: var(--coffee);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* BOTON MODO OSCURO*/
+.modo-oscuro-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--peach);
+  color: var(--chocolate);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modo-oscuro-btn:hover {
+  background-color: var(--coffee);
+  color: white;
+  transform: scale(1.1);
+}
+
+header {
+  position: relative;
+}
+
+
+
+
+
+
+/* MODO OSCURO */
+
+
+
+
+
+body.dark-mode,
+body.dark-mode.pagina-saladas,
+body.dark-mode.pagina-drinks,
+body.dark-mode.pag1 {
+  background: #2b1e15 !important;
+  color: #f5e9dc !important;
+}
+
+/* Header y footer en oscuro */
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #3a281b !important;
+  color: #f5e9dc !important;
+}
+
+/* Cards, recetas y secciones */
+
+body.dark-mode .receta,
+body.dark-mode .dulce-card,
+body.dark-mode .card-texto,
+body.dark-mode .tabla-info,
+body.dark-mode .video-titulo{
+  background-color: #3c2a20 !important;
+  color: #f0e4d2 !important;
+  box-shadow: none !important;
+  border-color: #5a4633 !important;
+}
+
+/* Titulos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #f7d9b0 !important;
+}
+
+/* TABLAS OSCURO */
+body.dark-mode table {
+  background-color: #3a281b !important;
+  border-collapse: collapse;
+  width: 100%;
+  color: #f5e9dc !important;
+  border: 1px solid #5a4633 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode th {
+  background-color: #5a3f2a !important;
+  color: #fbe6c9 !important;
+  padding: 10px;
+  border: 1px solid #7a5a3a !important;
+}
+
+body.dark-mode td {
+  background-color: #3c2a20 !important;
+  color: #f7e8d0 !important;
+  padding: 10px;
+  border: 1px solid #6a4b2b !important;
+}
+
+body.dark-mode tr:nth-child(even) td {
+  background-color: #463226 !important;
+}
+
+body.dark-mode tr:hover td {
+  background-color: #5a3f2a !important;
+  transition: background-color 0.3s ease;
+}
+
+table, th, td {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/*Texto de ingredientes, pasos y parrafos */
+
+body.dark-mode .card-texto,
+body.dark-mode .card-texto p,
+body.dark-mode .card-texto li,
+body.dark-mode .receta .texto,
+body.dark-mode .receta .texto p,
+body.dark-mode .receta .texto li {
+  color: #f0e4d2 !important; 
+}
+
+/* Ajuste en página 2 */
+
+body.dark-mode .receta p {
+  color: #f0e4d2 !important;
+  line-height: 1.6;
+}
+
+/* iconos y numeros de listas */
+
+body.dark-mode .card-texto ul li::before,
+body.dark-mode .receta .texto ul li::before {
+  color: #f7d9b0 !important;
+}
+
+body.dark-mode .card-texto ol li::before,
+body.dark-mode .receta .texto ol li::before {
+  background-color: #f7d9b0 !important;
+  color: #3c2a20 !important;
+  box-shadow: none !important;
+}
+
+/* Encabezados dentro de las cards */
+
+body.dark-mode .card-texto h3,
+body.dark-mode .receta h3 {
+  color: #f7d9b0 !important;
+}
+
+/* MODO CLARO (cuando se apaga el oscuro) */
+
+body:not(.dark-mode) .card-texto,
+body:not(.dark-mode) .receta .texto,
+body:not(.dark-mode) .card-texto li,
+body:not(.dark-mode) .receta .texto li,
+body:not(.dark-mode) .receta p {
+  color: var(--chocolate);
+  border: none;
+}
+
+body:not(.dark-mode) .card-texto ul li::before,
+body:not(.dark-mode) .receta .texto ul li::before {
+  color: var(--peach);
+}
+
+body:not(.dark-mode) .card-texto ol li::before,
+body:not(.dark-mode) .receta .texto ol li::before {
+  background-color: var(--peach);
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
